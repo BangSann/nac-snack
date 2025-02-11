@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwinds -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header
+      class="text-center sm:hidden fixed flex justify-start z-5 items-center w-full z-5 h-12 top-0 left-0 bg-white shadow-md"
+    >
+      <img class="logo w-8" src="img/logo/logo.jpg" alt="logo" />
+      <h1
+        class="brand-name text-pink-600 text-2xl font-bold"
+        style="margin-left: 8px"
+      >
+        Nac Snack
+      </h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="jumbotron flex h-[10%] sm:flex-row flex-col-reverse justify-between relative bg-white"
+    >
+      <img
+        class="absolute z-1 sm:top-px top-[50%] md:w-[18%] sm:w-auto w-[26%]"
+        src="img/shape/shape-header.png"
+        alt="shape-header"
+      />
+      <div class="sm:w-1/2 w-[90%] relative">
+        <header class="sm:flex hidden items-center relative z-4">
+          <img class="logo w-16" src="img/logo/logo.jpg" alt="logo" />
+          <b class="brand-name xl:text-3xl md:text-2xl sm:text-xl text-pink-500"
+            >NacSnac</b
+          >
+        </header>
+        <div class="caption relative z-4 flex gap-8">
+          <div
+            class="social-media sm:flex hidden gap-3 flex-col justify-between"
+          >
+            <div class="relative h-3/4">
+              <span class="w-[1px] h-full z-1 bg-pink-500 absolute"></span>
+            </div>
+            <div
+              class="z-5 flex flex-col md:gap-5 sm:gap-3 md:text-xl sm:text-md text-pink-500"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="best-seller w-36 md:h-7 h-6 flex items-center relative">
+              <p
+                class="text-white relative xl:text-sm md:text-[13px] text-[12px] z-5 font-semibold"
+              >
+                Best Seller
+              </p>
+              <img
+                class="absolute z-1 object-cover xl:w-36 md:w-32 sm:w-28 w-28 h-full"
+                src="img/shape/shape-caption.svg"
+                alt=""
+              />
+            </div>
+            <div class="desc text-start flex flex-col md:gap-4 xl:gap-5 gap-3">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="sm:w-[45%] w-full justify-between flex sm:h-screen relative z-4"
+      >
+        <div class="social-media sm:hidden flex gap-3 flex-col justify-between">
+          <div class="relative h-full">
+            <span class="w-[1px] h-full z-1 bg-pink-500 absolute"></span>
+          </div>
+          <div class="z-5 flex flex-col gap-4 sm:text-2xl text-pink-500">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+        </div>
+        <div class="sm:w-auto w-3/4">
+          <img
+            src="img/shape/png-BestSeller.png"
+            loading="lazy"
+            class="lazy"
+            alt="img-bestSeller"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk Kami -->
+    <section
+      class="relative produks text-center flex flex-col justify-center items-center"
+    >
+      <h2 class="text-pink-500 text-2xl font-bold">Produk Kami</h2>
+      <img
+        class="absolute xl:w-28 w-16 z-1 right-px bottom-px"
+        src="img/shape/Vector 10 (1).png"
+        alt=""
+      />
+        <!-- Tambahkan lebih banyak produk sesuai kebutuhan -->
+      </div>
+      <div class="load-more">
+        <button
+          class="bg-pink-500 xl:text-auto md:text-[14px] text-[13px] cursor-pointer text-white font-semibold rounded-full"
+        ></button>
+      </div>
+    </section>
+
+    <!-- Galeri Produk -->
+    <section
+      class="galeri text-center flex justify-center items-center flex-col w-full"
+    >
+      <h2 class="text-pink-500 text-2xl font-bold">Galeri Produk</h2>
+      <div
+        class="button-gallery flex items-center gap-5 justify-center flex-wrap"
+      >
+        <button
+          class="filter-button active bg-pink-500 xl:text-auto md:text-[14px] text-[13px] cursor-pointer text-white font-semibold rounded-full"
+          data-filter="hantaran"
+        >
+          Hantaran
+        </button>
+        <button
+          class="filter-button bg-pink-500 xl:text-auto md:text-[14px] text-[13px] cursor-pointer text-white font-semibold rounded-full"
+          data-filter="kueKering"
+        >
+          Kue Kering
+        </button>
+        <button
+          class="filter-button bg-pink-500 xl:text-auto md:text-[14px] text-[13px] cursor-pointer text-white font-semibold rounded-full"
+          data-filter="makanan"
+        >
+          Makanan
+        </button>
+        <button
+          class="filter-button bg-pink-500 xl:text-auto md:text-[14px] text-[13px] cursor-pointer text-white font-semibold rounded-full"
+          data-filter="snack"
+        >
+          Snack
+        </button>
+        <button
+          class="filter-button bg-pink-500 xl:text-auto md:text-[14px] text-[13px] cursor-pointer text-white font-semibold rounded-full"
+          data-filter="snackBox"
+        >
+          Snack Box
+        </button>
+      </div>
+
+      <div class="flex justify-center">
+        <div
+          class="gallery-items flex flex-wrap sm:gap-4 gap-2 w-vw lg:w-[80%] justify-center lg:justify-start"
+        >
+        </div>
+      </div>
+
+      <button
+        class="bg-pink-500 text-white px-6 py-2 rounded-full mt-4"
+      ></button>
+    </section>
+
+    <!-- Kontak dan Lokasi -->
+    <section class="kontak bg-white text-center relative">
+      <h2 class="text-pink-500 text-2xl font-bold">Alamat Kami</h2>
+      <img
+        class="shape-footer absolute bottom-[0px] right-[0px] z-1"
+        src="img/shape/Vector 11.png"
+        alt="shape-footer"
+      />
+      <div
+        class="flex relative z-4 lg:justify-around justify-start items-center flex-wrap"
+      >
+        <ul class="flex flex-col gap-3">
+          <li class="flex gap-3 text-start">
+            <img class="lg:w-24 w-18" src="img/shape/email.png" alt="email" />
+            <div>
+              <b class="text-pink-500 lg:text-xl text-[17px]">Email</b>
+              <p class="text-gray-600 text-[14px]">nadiashiva289@gmail.com</p>
+            </div>
+          </li>
+          <li class="flex gap-3 text-start">
+            <img class="lg:w-24 w-18" src="img/shape/telephone.png" alt="telephone" />
+            <div>
+              <b class="text-pink-500 lg:text-xl text-[17px] ">Telephone</b>
+              <p class="text-gray-600 text-[14px]">081231157478</p>
+            </div>
+          </li>
+          <li class="flex gap-3 text-start">
+            <img class=" lg:w-24 w-18" src="img/shape/alamat.png" alt="telephone" />
+            <div>
+              <b class="text-pink-500 lg:text-xl text-[17px]">Alamat</b>
+              <p class="text-gray-600 text-[14px]">Kota Kediri</p>
+            </div>
+          </li>
+        </ul>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d494.1238765016546!2d111.9814729113988!3d-7.790775365195886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1739153630436!5m2!1sid!2sid"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative flex justify-center items-center z-4">
+      <p class="text-white text-[13px]">
+        &copy; 2025 NacSnack, All Rights Reserved.
+      </p>
+    </footer>
+
+    <!-- Swit Allert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- js -->
+    <script src="main.js"></script>
+  </body>
+</html>

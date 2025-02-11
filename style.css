@@ -1,0 +1,293 @@
+/* Add styles here */
+:root {
+  --primary: rgba(253, 53, 145, 72%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", serif;
+}
+header {
+  margin-top: 20px;
+}
+.brand-name {
+  font-family: "Leckerli One", serif;
+  /* color: var(--primary); */
+  margin-left: 20px;
+}
+.logo{
+  margin-left: 24px;
+  border-radius: 100%;
+}
+
+.caption {
+  /* margin-left: 50px; */
+  /* margin-top: 12%; */
+  margin: 20% 0px 8% 50px;
+  /* height:90%; */
+}
+.best-seller {
+  /* margin-left:30px; */
+}
+.social-media div:first-child {
+  padding-left: 6px;
+}
+.best-seller p {
+  padding-left: 10px;
+}
+.desc {
+  margin-top: 20px;
+}
+.desc button {
+  padding: 5px 0px;
+  transition: 0.3s all;
+  border: 2px solid var(--primary);
+}
+.desc button:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid var(--primary);
+}
+
+.img-bestSeller{
+  margin-right: 130px;
+  margin-top: 10px;
+}
+
+.carousel-btn{
+  padding: 4px ;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.pesan-sambal{
+  margin-top: 12px;
+}
+
+
+
+/* section produk */
+.produks{
+  margin-bottom: 100px;
+}
+.button-items{
+  margin-top: 20px;
+}
+.button-gallery .active{
+  background-color: var(--primary);
+  color: white;
+  border: 2px solid transparent;
+}
+.load-more{
+  margin-top: 20px;
+}
+.load-more button, .button-gallery button{
+  padding: 5px 40px;
+  color: var(--primary);
+  background-color: white;
+  transition: 0.3s all;
+  border: 2px solid var(--primary);
+}
+.load-more button:hover, .button-gallery button:hover {
+  color: white;
+  background-color: var(--primary);
+  border: 2px solid transparent;
+
+}
+.produk-items{
+  margin-top: 40px;
+}
+.produk-items button{
+  margin: 8px 0px;
+  border-radius: 50px 0px 50px 0px;
+}
+.item{
+  /* margin-bottom: 180px; */
+}
+
+.produk img{
+  border-radius: 50px 0px 50px 0px;
+}
+
+/* From Uiverse.io by devkatyall */ 
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary);
+  color: var(--primary);
+  overflow: hidden;
+  border: 2px solid var(--primary);
+}
+
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 0px;
+  /* padding: 0.8em 0.9em 0.8em 1.02em; */
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: white ;
+  color: color !important;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover{
+  color: white;
+}
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+
+
+
+/* gallery items */
+.galeri h2{
+  margin-bottom: 20px;
+}
+.gallery-items{
+  margin-top: 30px;
+}
+.button-gallery{
+  /* margin-top: 20px; */
+}
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+
+
+/* kontak */
+.kontak{
+  margin-top:30px;
+  padding-bottom: 10%;
+}
+.kontak > div{
+  margin-top: 20px;
+}
+.kontak > ul{
+  margin-left: 20px;
+}
+.kontak ul div{
+  margin-top: 18px;
+}
+
+.kontak iframe{
+  margin-top:20px ;
+  width: 40rem;
+  height: 25rem;
+  /* padding: 50px; */
+  border-radius: 70px 0px 70px 0px;
+}
+
+
+/* footer */
+footer{
+  height: 80px;
+  background-color: var(--primary);
+}
+
+@media screen and (max-width: 1024px) {
+  .kontak > div{
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .desc button {
+    padding: 2px 0px;
+  }
+  .desc {
+    margin-top: 15px;
+  }
+  .kontak iframe{
+    width: 70vw;
+    height: 50vh;
+  }
+ 
+  .shape-footer{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .social-media {
+    margin-left: 10%;
+    height: 30vh;
+  }
+  .social-media i{
+    font-size: 20px;
+  }
+  .social-media span{
+    margin-left: 2px;
+  }
+  header {
+    margin-top: 0;
+  }
+  .jumbotron {
+    margin-top: 18px;
+  }
+  .caption{
+    margin: -20% 20px 8% 5%;
+  }
+  
+
+  .kontak > div{
+    margin-left: 30px;
+  }
+  .kontak iframe{
+    width: 85vw;
+    height: 40vh;
+  }
+  .shape-footer{
+    display: none;
+  }
+  .kontak iframe{
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .social-media{
+    height: 20vh;
+  }
+}
